@@ -8,7 +8,7 @@ Everything you need to understand **Azure Catalyst** (formerly Azure Migrate, re
 - **[Customer demo runbook](02-customer-demo-plan.md)** — a scripted 45-minute demo using CSV import (no on-prem lab required), with prep checklist, rehearsed agent prompts, and known gotchas.
 - **[Hackathon plan](03-hackathon-plan.md)** — "Catalyst Cup," a one-day, five-challenge event taking teams from raw inventory to a committed migration plan.
 - **[Demo dataset](assets/demo-inventory.csv)** — 15-server Contoso Retail inventory for the CSV import path, used by both the demo and the hackathon.
-- **[GitHub Pages publishing guide](04-github-pages-plan.md)** — how this site is built and how to take it live.
+- **[GitHub Pages publishing guide](04-github-pages-plan.md)** — how this site is built, deployed, and kept up to date.
 
 ## The one-paragraph pitch
 

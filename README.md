@@ -2,7 +2,7 @@
 
 Research dossier, customer demo runbook, and hackathon plan for **Azure Catalyst** (formerly Azure Migrate, renamed November 2026) — Microsoft's free service to discover, assess, plan, and execute migration and modernization to Azure.
 
-📖 **Docs site:** https://heisenberg-alt.github.io/azure-catalyst/ *(see [docs/04-github-pages-plan.md](docs/04-github-pages-plan.md) to enable Pages)*
+📖 **Docs site:** https://heisenberg-alt.github.io/azure-catalyst/ — rebuilt on every push to `main` (see the [publishing guide](docs/04-github-pages-plan.md)).
 
 ## Contents
 

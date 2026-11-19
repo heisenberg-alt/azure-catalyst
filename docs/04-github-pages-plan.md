@@ -24,40 +24,26 @@ Site structure (defined in `mkdocs.yml`):
 
 ## Current state
 
-- Repo pushed to `github.com/heisenberg-alt/azure-catalyst` as **private**.
-- Site scaffold and deploy workflow are committed and build-verified locally.
-- Pages is **not yet enabled** — that is the go-live decision below.
+- Repo: `github.com/heisenberg-alt/azure-catalyst`, **private**.
+- GitHub Pages: **live** at https://heisenberg-alt.github.io/azure-catalyst/ (build type: GitHub Actions, HTTPS enforced). The account plan allows Pages from a private repo, so the first push after enabling succeeded without making the repo public.
+- Important: the **site is publicly readable** even though the repo is private. Anyone with the URL can view every page and download the dataset. All content derives from public Microsoft Learn docs and fictional Contoso data, so this is acceptable for the current content — keep customer-specific material out of `docs/`.
+- Every push to `main` rebuilds and redeploys automatically (about one minute).
 
-## Go-live steps
+## Access options
 
-1. **Decide visibility.** GitHub Pages on a Free personal account requires a **public** repo (Pro/Team/Enterprise can publish from private repos). Content review: everything here derives from public Microsoft Learn documentation and fictional Contoso data — nothing customer-specific or confidential. When ready:
+| Goal | Action |
+|---|---|
+| Keep as is (private source, public site) | Nothing to do. |
+| Restrict the site to people with repo access | Pages access control requires GitHub Enterprise Cloud; if available: Settings → Pages → Visibility → **Private**. Otherwise unpublish (below) and share the repo directly. |
+| Open-source the whole kit | `gh repo edit heisenberg-alt/azure-catalyst --visibility public --accept-visibility-change-consequences` — the site URL does not change. |
+| Unpublish the site | `gh api -X DELETE repos/heisenberg-alt/azure-catalyst/pages` (the workflow will then fail at the configure-pages step until re-enabled). |
 
-   ```bash
-   gh repo edit heisenberg-alt/azure-catalyst --visibility public --accept-visibility-change-consequences
-   ```
+## Manual redeploy
 
-2. **Enable Pages with the Actions source.** Either in the UI (Settings → Pages → Source: *GitHub Actions*) or:
-
-   ```bash
-   gh api repos/heisenberg-alt/azure-catalyst/pages -X POST -f build_type=workflow
-   ```
-
-   The workflow also passes `enablement: true` to `actions/configure-pages`, so a manual run can self-enable Pages once the repo is public.
-
-3. **Run the deployment.**
-
-   ```bash
-   gh workflow run pages.yml --repo heisenberg-alt/azure-catalyst
-   gh run watch --repo heisenberg-alt/azure-catalyst
-   ```
-
-   After this, every push to `main` redeploys automatically.
-
-4. **Verify.** The site lands at:
-
-   ```text
-   https://heisenberg-alt.github.io/azure-catalyst/
-   ```
+```bash
+gh workflow run pages.yml --repo heisenberg-alt/azure-catalyst
+gh run watch --repo heisenberg-alt/azure-catalyst
+```
 
 ## Local preview
 

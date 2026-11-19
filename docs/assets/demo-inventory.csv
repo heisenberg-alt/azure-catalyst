@@ -1,16 +1,16 @@
-Server name,IP address,Cores,Memory (In MB),OS name,OS version,OS architecture,Server type
-contoso-web-01.contoso.local,10.10.1.11,4,8192,Windows Server 2016 Datacenter,10.0.14393,x64,Virtual
-contoso-web-02.contoso.local,10.10.1.12,4,8192,Windows Server 2016 Datacenter,10.0.14393,x64,Virtual
-contoso-web-03.contoso.local,10.10.1.13,4,8192,Windows Server 2019 Datacenter,10.0.17763,x64,Virtual
-contoso-app-01.contoso.local,10.10.2.11,8,16384,Windows Server 2019 Datacenter,10.0.17763,x64,Virtual
-contoso-app-02.contoso.local,10.10.2.12,8,16384,Windows Server 2019 Datacenter,10.0.17763,x64,Virtual
-contoso-sql-01.contoso.local,10.10.3.11,16,65536,Windows Server 2016 Datacenter,10.0.14393,x64,Virtual
-contoso-sql-02.contoso.local,10.10.3.12,16,65536,Windows Server 2012 R2 Datacenter,6.3.9600,x64,Virtual
-contoso-dc-01.contoso.local,10.10.0.11,4,8192,Windows Server 2019 Datacenter,10.0.17763,x64,Virtual
-contoso-file-01.contoso.local,10.10.0.21,4,16384,Windows Server 2012 R2 Standard,6.3.9600,x64,Physical
-contoso-lnx-app-01.contoso.local,10.10.4.11,8,16384,Red Hat Enterprise Linux 7.9,7.9,x64,Virtual
-contoso-lnx-app-02.contoso.local,10.10.4.12,8,16384,Red Hat Enterprise Linux 8.6,8.6,x64,Virtual
-contoso-lnx-web-01.contoso.local,10.10.4.21,2,4096,Ubuntu Linux 20.04,20.04,x64,Virtual
-contoso-erp-01.contoso.local,10.10.5.11,16,32768,Windows Server 2016 Datacenter,10.0.14393,x64,Virtual
-contoso-bi-01.contoso.local,10.10.5.21,8,32768,Windows Server 2019 Datacenter,10.0.17763,x64,Virtual
-contoso-dev-01.contoso.local,10.10.9.11,4,8192,Ubuntu Linux 22.04,22.04,x64,Virtual
+*Server name,IP addresses,*Cores,*Memory (In MB),*OS name,OS version,OS architecture,Server type,Hypervisor,CPU utilization percentage,Memory utilization percentage,Network adapters,Network In throughput,Network Out throughput,Boot type,Number of disks,Storage in use (In GB),Disk 1 size (In GB),Disk 1 read throughput (MB per second),Disk 1 write throughput (MB per second),Disk 1 read ops (operations per second),Disk 1 write ops (operations per second),Disk 2 size (In GB),Disk 2 read throughput (MB per second),Disk 2 write throughput (MB per second),Disk 2 read ops (operations per second),Disk 2 write ops (operations per second)
+contoso-web-01.contoso.local,10.10.1.11,4,8192,Windows Server 2016,10.0.14393,x64,Virtual,VMware,22,48,1,4,9,BIOS,1,60,128,5,3,80,40,,,,,
+contoso-web-02.contoso.local,10.10.1.12,4,8192,Windows Server 2016,10.0.14393,x64,Virtual,VMware,19,45,1,4,8,BIOS,1,58,128,5,3,75,38,,,,,
+contoso-web-03.contoso.local,10.10.1.13,4,8192,Windows Server 2019,10.0.17763,x64,Virtual,VMware,25,52,1,5,10,UEFI,1,62,128,6,3,90,45,,,,,
+contoso-app-01.contoso.local,10.10.2.11,8,16384,Windows Server 2019,10.0.17763,x64,Virtual,VMware,35,61,2,12,12,UEFI,2,210,128,8,6,150,120,256,10,8,200,160
+contoso-app-02.contoso.local,10.10.2.12,8,16384,Windows Server 2019,10.0.17763,x64,Virtual,VMware,31,58,2,11,11,UEFI,2,205,128,8,6,140,115,256,10,8,190,150
+contoso-sql-01.contoso.local,10.10.3.11,16,65536,Windows Server 2016,10.0.14393,x64,Virtual,VMware,42,78,2,30,25,BIOS,2,820,128,10,5,120,60,1024,60,45,1800,1200
+contoso-sql-02.contoso.local,10.10.3.12,16,65536,Windows Server 2012 R2,6.3.9600,x64,Virtual,VMware,18,55,2,10,8,BIOS,2,610,128,8,4,90,40,1024,25,18,700,450
+contoso-dc-01.contoso.local,10.10.0.11,4,8192,Windows Server 2019,10.0.17763,x64,Virtual,VMware,8,35,1,2,2,UEFI,1,45,128,2,1,30,20,,,,,
+contoso-file-01.contoso.local,10.10.0.21,4,16384,Windows Server 2012 R2,6.3.9600,x64,Physical,,12,40,2,20,35,BIOS,2,2900,128,3,2,40,20,4096,40,30,500,350
+contoso-lnx-app-01.contoso.local,10.10.4.11,8,16384,Red Hat Enterprise Linux 7,7.9,x64,Virtual,VMware,38,64,1,9,9,BIOS,1,95,256,7,5,130,100,,,,,
+contoso-lnx-app-02.contoso.local,10.10.4.12,8,16384,Red Hat Enterprise Linux 8,8.6,x64,Virtual,VMware,29,57,1,8,8,UEFI,1,88,256,6,5,120,90,,,,,
+contoso-lnx-web-01.contoso.local,10.10.4.21,2,4096,Ubuntu Linux,20.04,x64,Virtual,VMware,15,42,1,3,6,UEFI,1,28,64,3,2,50,25,,,,,
+contoso-erp-01.contoso.local,10.10.5.11,16,32768,Windows Server 2016,10.0.14393,x64,Virtual,VMware,48,72,2,18,15,BIOS,2,540,128,9,6,160,110,512,30,25,900,700
+contoso-bi-01.contoso.local,10.10.5.21,8,32768,Windows Server 2019,10.0.17763,x64,Virtual,VMware,55,69,1,25,6,UEFI,2,760,128,8,4,110,50,1024,70,20,1500,400
+contoso-dev-01.contoso.local,10.10.9.11,4,8192,Ubuntu Linux,22.04,x64,Virtual,VMware,6,30,1,1,1,UEFI,1,40,128,2,1,25,15,,,,,

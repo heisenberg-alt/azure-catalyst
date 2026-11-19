@@ -70,9 +70,9 @@ Capabilities:
 
 ## Setup essentials
 
-- **Roles:** Azure Migrate built-in roles govern who can create projects, run discovery/assessment/migration — see "Prepare Azure accounts."
+- **Roles:** creating a project requires Contributor or Owner on the subscription **and** permission to register Microsoft Entra apps. After that, Azure Migrate built-in roles govern discovery, assessment, and migration — see "Prepare Azure accounts."
 - **Project:** created in a supported geography (metadata residency); one project can mix discovery sources.
-- **Official CSV template:** https://go.microsoft.com/fwlink/?linkid=2109031 (mandatory columns: Server name, Cores, Memory in MB, OS name).
+- **Official CSV template:** https://go.microsoft.com/fwlink/?linkid=2109031 — 27 columns; mandatory ones are starred (`*Server name`, `*Cores`, `*Memory (In MB)`, `*OS name`). OS names must contain a string from the supported list (e.g., "Windows Server 2019", "Red Hat Enterprise Linux 8", "Ubuntu Linux"). Up to 20,000 servers per file. Imported servers can be assessed but not migrated.
 
 ## Source links
 

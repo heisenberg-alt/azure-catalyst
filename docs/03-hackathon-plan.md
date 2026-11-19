@@ -10,9 +10,9 @@ A one-day (8-hour) hands-on hackathon where teams act as a migration consultancy
 
 ## Prerequisites (organizer, 1–2 weeks ahead)
 
-1. Subscription(s) with quota; one resource group + Azure Migrate built-in roles (or Contributor) per team.
+1. Subscription(s) with quota; one resource group per team. Each team's project creator needs **Contributor or Owner on the subscription plus permission to register Microsoft Entra apps** (a Catalyst project registers an app). If app registration is restricted, pre-create the projects as an admin and grant teams the Azure Migrate built-in roles instead.
 2. **Tenant admin enables Azure Copilot and Catalyst agent access for all participants.** Longest-lead-time item; test with a non-admin account.
-3. Distribute the dataset: `assets/demo-inventory.csv` (or a richer 50-server variant you generate from it), plus the official CSV template link.
+3. Distribute the dataset: [`assets/demo-inventory.csv`](assets/demo-inventory.csv) (or a richer 50-server variant you generate from it, keeping the same 27-column header), plus the [official CSV template](https://go.microsoft.com/fwlink/?linkid=2109031) link.
 4. Verify Catalyst project creation works in your chosen geography.
 5. Dry-run challenges 1–4 yourself end to end; preview features (agent, wave planning) can shift.
 6. Prepare judge briefing + rubric printouts; recruit 2–3 judges (one plays the Contoso CIO).
@@ -39,7 +39,7 @@ A one-day (8-hour) hands-on hackathon where teams act as a migration consultancy
 | Time | Item |
 |---|---|
 | 08:30 | Arrival, access checks (portal + Copilot agent visible for every participant) |
-| 09:00 | Kickoff: Contoso scenario + 20-min Catalyst walkthrough (reuse `02-customer-demo-plan.md` flow) |
+| 09:00 | Kickoff: Contoso scenario + 20-min Catalyst walkthrough (reuse the [customer demo runbook](02-customer-demo-plan.md) flow) |
 | 09:30 | Challenge 1 |
 | 10:30 | Challenge 2 |
 | 11:45 | Lunch + CIO pitch sessions (Challenge 2 deliverable) |
@@ -66,7 +66,7 @@ A one-day (8-hour) hands-on hackathon where teams act as a migration consultancy
 
 ## Participant handout checklist
 
-- Azure portal access verified, RG + roles assigned
+- Azure portal access verified, RG + roles assigned, project creatable (or pre-created)
 - Catalyst agent visible in Azure Copilot new-chat menu
 - Dataset CSV + official template link
-- Docs quick links (see `01-azure-catalyst-overview.md` source list)
+- Docs quick links (see the [overview](01-azure-catalyst-overview.md) source list)

@@ -1,0 +1,16 @@
+Server name,IP address,Cores,Memory (In MB),OS name,OS version,OS architecture,Server type
+contoso-web-01.contoso.local,10.10.1.11,4,8192,Windows Server 2016 Datacenter,10.0.14393,x64,Virtual
+contoso-web-02.contoso.local,10.10.1.12,4,8192,Windows Server 2016 Datacenter,10.0.14393,x64,Virtual
+contoso-web-03.contoso.local,10.10.1.13,4,8192,Windows Server 2019 Datacenter,10.0.17763,x64,Virtual
+contoso-app-01.contoso.local,10.10.2.11,8,16384,Windows Server 2019 Datacenter,10.0.17763,x64,Virtual
+contoso-app-02.contoso.local,10.10.2.12,8,16384,Windows Server 2019 Datacenter,10.0.17763,x64,Virtual
+contoso-sql-01.contoso.local,10.10.3.11,16,65536,Windows Server 2016 Datacenter,10.0.14393,x64,Virtual
+contoso-sql-02.contoso.local,10.10.3.12,16,65536,Windows Server 2012 R2 Datacenter,6.3.9600,x64,Virtual
+contoso-dc-01.contoso.local,10.10.0.11,4,8192,Windows Server 2019 Datacenter,10.0.17763,x64,Virtual
+contoso-file-01.contoso.local,10.10.0.21,4,16384,Windows Server 2012 R2 Standard,6.3.9600,x64,Physical
+contoso-lnx-app-01.contoso.local,10.10.4.11,8,16384,Red Hat Enterprise Linux 7.9,7.9,x64,Virtual
+contoso-lnx-app-02.contoso.local,10.10.4.12,8,16384,Red Hat Enterprise Linux 8.6,8.6,x64,Virtual
+contoso-lnx-web-01.contoso.local,10.10.4.21,2,4096,Ubuntu Linux 20.04,20.04,x64,Virtual
+contoso-erp-01.contoso.local,10.10.5.11,16,32768,Windows Server 2016 Datacenter,10.0.14393,x64,Virtual
+contoso-bi-01.contoso.local,10.10.5.21,8,32768,Windows Server 2019 Datacenter,10.0.17763,x64,Virtual
+contoso-dev-01.contoso.local,10.10.9.11,4,8192,Ubuntu Linux 22.04,22.04,x64,Virtual

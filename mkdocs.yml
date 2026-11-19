@@ -1,0 +1,47 @@
+site_name: Azure Catalyst — Demo & Hackathon Kit
+site_description: Information dossier, customer demo runbook, and hackathon plan for Azure Catalyst (formerly Azure Migrate).
+site_url: https://heisenberg-alt.github.io/azure-catalyst/
+repo_url: https://github.com/heisenberg-alt/azure-catalyst
+repo_name: heisenberg-alt/azure-catalyst
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - toc.integrate
+    - search.suggest
+    - content.action.edit
+    - content.code.copy
+
+nav:
+  - Home: index.md
+  - Azure Catalyst overview: 01-azure-catalyst-overview.md
+  - Customer demo runbook: 02-customer-demo-plan.md
+  - Hackathon plan: 03-hackathon-plan.md
+  - Publishing guide: 04-github-pages-plan.md
+
+markdown_extensions:
+  - admonition
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.superfences
+  - pymdownx.highlight
